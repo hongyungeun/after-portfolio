@@ -616,6 +616,70 @@ body.on{
 .port_num.active {
   color: #111 !important;
 }
+.faq_section {
+  margin-top: 150px;
+}
+.faq_sub_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.faq_title {
+  font-size: 35px;
+  margin-bottom: 200px;
+}
+.faq_card {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.faq_card_title_wrap {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px 0 0 0;
+  padding: 10px 15px;
+  gap: 20px;
+  min-width: 300px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.322);
+  cursor: pointer;
+}
+.faq_01 {
+  width: 40%;
+}
+.faq_02 {
+  width: 60%;
+}
+.faq_03 {
+  width: 80%;
+}
+.faq_card_title_wrap.active {
+  background: #000;
+}
+.faq_q {
+  background: #1e1e1e;
+  color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq_card_title {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.faq_card_title.active {
+  color: #fff;
+}
+.faq_answer {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+}
 
 
 

@@ -124,6 +124,12 @@ $(function(){
     }
   }
 
+  // faq클릭
+  $(document).on('click','.faq_card_title_wrap',function(){
+    $(this).toggleClass('active')
+    $(this).children('.faq_card_title').toggleClass('active')
+    $(this).siblings('.faq_answer').slideToggle()
+  })
 
   
 })

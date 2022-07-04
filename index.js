@@ -71,6 +71,7 @@ $(function(){
       
     }
   })
+  // skill animate
   $(document).on('scroll',function(){
     if ($('.second_section').offset().top -300 < $(window).scrollTop()) {
       $('.skill_html').css('height','85%')
@@ -81,27 +82,48 @@ $(function(){
       console.log('hi')
     }
   })
-  $(document).on('click','.mobile_header_icon',function(){
-    $('.circle').toggleClass('circle_on')
-    $('.x').toggleClass('x_on')
-    $('.y').toggleClass('y_on')
-    $('.z').toggleClass('z_on')
-    $('.head_nav_wrap').toggleClass('head_nav_on')
-    $('.footer').toggleClass('footer_on')
 
+  // mobile menubar
+  $(document).on('click','.mobile_header_icon',function(){
+    if($('.x').hasClass('on')){
+
+    }else {
+        $('.x').toggleClass('x_on')
+        $('.y').toggleClass('y_on')
+        $('.z').toggleClass('z_on')
+        $('.second_header').toggleClass('on')
+        $('.mobile_menu_bar').toggleClass('on')
+    }
   })
-  // $(document).on('click','button',function(){
-  //   let val = $('input').val()
-  //     if(val !== '') {
-  //       console.log($(this))
-  //       let userChat = `<div class="user_chat2">안녕하세요! ${val}입니다. 반갑습니다. </div>`
-  //       $('.chat_inner2').append(userChat)
-  //       $('.chat_inner2').scrollTop($('.chat_inner2')[0].scrollHeight)
-  //       $('input').val('')
-  //       setTimeout(() => {
-  //         let chat = `<div class="chat_user_box">네! ${val}님 이시군요! 포트폴리오에 오신것을 환영 합니다!</div>`
-  //         $('.chat_inner2').append(chat)
-  //       }, 1000);
-  //     }
-  // })
+
+
+  // porfolio scroll animate
+  $(window).scroll(scroll)
+  function scroll(){
+    let scrollTop = $(window).scrollTop()
+    let section1 = $('.card1').offset().top
+    let section2 = $('.card2').offset().top
+    let section3 = $('.card3').offset().top
+    let section4 = $('.card4').offset().top
+    let section5 = $('.card5').offset().top  
+    if(scrollTop >= section1 && scrollTop <= section2 -200){
+      $('.port_num').removeClass('active')
+      $('.card1').addClass('active')
+    }else if(scrollTop >= section2 - 250 && scrollTop <= section3 -200){
+      $('.port_num').removeClass('active')
+      $('.card2').addClass('active')
+    }else if(scrollTop >= section3 - 250 && scrollTop <= section4 -200){
+      $('.port_num').removeClass('active')
+      $('.card3').addClass('active')
+    }else if(scrollTop >= section4 - 250 && scrollTop <= section5 -200){
+      $('.port_num').removeClass('active')
+      $('.card4').addClass('active')
+    }else if(scrollTop >= section5 - 200){
+      $('.port_num').removeClass('active')
+      $('.card5').addClass('active')
+    }
+  }
+
+
+  
 })

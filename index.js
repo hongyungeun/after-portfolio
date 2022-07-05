@@ -107,9 +107,11 @@ $(function(){
     let section4 = $('.card4').offset().top
     let section5 = $('.card5').offset().top  
     if(scrollTop >= section1 && scrollTop <= section2 -200){
+      
       $('.port_num').removeClass('active')
       $('.card1').addClass('active')
     }else if(scrollTop >= section2 - 250 && scrollTop <= section3 -200){
+      
       $('.port_num').removeClass('active')
       $('.card2').addClass('active')
     }else if(scrollTop >= section3 - 250 && scrollTop <= section4 -200){

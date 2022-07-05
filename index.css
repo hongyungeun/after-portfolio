@@ -604,6 +604,7 @@ body.on{
   -webkit-text-stroke: 1px rgba(255,255,255,0.5);
   transition: all .5s ease-in-out;
   width: 40%;
+  min-width: 185px;
 }
 .num_main {
   font-size: 100px;
@@ -614,7 +615,7 @@ body.on{
   margin-bottom: 15px;
 }
 .port_num.active {
-  color: #111 !important;
+  color: #000 !important;
 }
 .faq_section {
   margin-top: 150px;
@@ -632,6 +633,7 @@ body.on{
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  margin: 0 0 0 auto;
   margin-bottom: 30px;
 }
 .faq_card_title_wrap {
@@ -639,7 +641,7 @@ body.on{
   align-items: center;
   background: #fff;
   border-radius: 10px 0 0 0;
-  padding: 10px 15px;
+  padding: 15px;
   gap: 20px;
   min-width: 300px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.322);
@@ -653,6 +655,15 @@ body.on{
 }
 .faq_03 {
   width: 80%;
+}
+.faq_an01 {
+  width: 100%;
+}
+.faq_an02 {
+  width: 100%;
+}
+.faq_an03 {
+  width: 100%;
 }
 .faq_card_title_wrap.active {
   background: #000;
@@ -680,7 +691,9 @@ body.on{
   margin-top: 20px;
   padding: 20px;
 }
-
+.port_card.active {
+  background: #fff;
+}
 
 
 
@@ -714,6 +727,26 @@ body.on{
   }
   .second_header {
     padding: 15px 10px;
+  }
+  
+  .portfolio_section_wrap  {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .faq_title_wrap  {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .num_main {
+    font-size: 50px;
+  }
+  .num_title {
+    font-size: 20px;
+  }
+  .num_desc {
+    font-size: 16px;
   }
 }
 @media screen and (max-width : 940px) {
@@ -749,6 +782,24 @@ body.on{
   }
   .dummy_logo {
     width: 30px;
+  }
+}
+@media screen and (max-width : 650px) {
+  .port_card {
+    flex-direction: column;
+  }
+  .port_num {
+    position: relative;
+  }
+  /* .port_num.active {
+    color: #fff !important;
+  }
+  .port_card.active {
+    background: #000;
+    padding: 15px;
+  } */
+  .faq_card_title {
+    font-size: 16px;
   }
 }
 @media screen and (max-width : 540px) {

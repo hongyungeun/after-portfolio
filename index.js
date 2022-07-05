@@ -1,4 +1,6 @@
 $(function () {
+
+  
   // 날짜
   let nowDate = new Date()
   let nowDate2 = nowDate.getDate()

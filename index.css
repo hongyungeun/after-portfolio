@@ -627,7 +627,7 @@ body.on{
 }
 .faq_title {
   font-size: 35px;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 }
 .faq_card {
   display: flex;
@@ -641,7 +641,7 @@ body.on{
   align-items: center;
   background: #fff;
   border-radius: 10px 0 0 0;
-  padding: 15px;
+  padding: 25px 15px;
   gap: 20px;
   min-width: 300px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.322);
@@ -695,7 +695,86 @@ body.on{
   background: #fff;
 }
 
-
+/* contact section */
+.contact_section {
+  margin-top: 250px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.info_name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.info_title {
+  color: #5FBC76;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.info_desc {
+  font-size: 16px;
+  color: #575757;
+  line-height: 25px;
+}
+.info_send {
+  margin-top: 50px;
+}
+.send_input_wrap {
+  margin-top: 20px;
+  background: #2A2A2A;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.send_input {
+  padding: 20px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+}
+.send_input:focus{
+  outline: none;
+}
+.send_btn {
+  background: #5FBC76;
+  padding: 20px 30px;
+  cursor: pointer;
+  min-width: 130px;
+  text-align: center;
+  /* font-weight: bold; */
+}
+.sns_wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_menu {
+  font-size: 25px;
+  font-weight: bold;
+}
+.footer_menu p {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.sns_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sns_wrap i {
+  font-size: 45px;
+  transition: all .2s;
+}
+.sns_wrap i:hover {
+  color: #5FBC76;
+}
 
 @media screen and (max-width : 1410px) {
   .main_chat_side_box {
@@ -753,6 +832,12 @@ body.on{
   .second_inner_box {
     width: 90%;
   }
+  .contact_section  {
+    width: 90%;
+  }
+  .footer_menu  {
+    display: none;
+  }
 }
 @media screen and (max-width : 810px) {
   .tab_none {
@@ -782,6 +867,10 @@ body.on{
   }
   .dummy_logo {
     width: 30px;
+  }
+  .contact_section {
+    flex-direction: column;
+    gap: 50px;
   }
 }
 @media screen and (max-width : 650px) {

@@ -432,6 +432,7 @@ body {
   height: 300px;
   margin-top: 50px;
   box-shadow: 0 3px 6px #0000001c;
+  padding: 15px;
 }
 
 .skill_box {

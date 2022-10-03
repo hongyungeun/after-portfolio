@@ -912,6 +912,9 @@ body.on{
   .port_num {
     position: relative;
   }
+  .main_user_card_btn {
+    margin-bottom: 0;
+  }
   /* .port_num.active {
     color: #fff !important;
   }

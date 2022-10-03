@@ -53,8 +53,19 @@ img {
 }
 body {
   background: #f9f9f9;
+  overflow: hidden;
 }
 
+.fix_box {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 .main_section_wrap {
   min-height: 800px;
@@ -267,8 +278,8 @@ body {
   width: 10%;
   text-align: center;
 }
-.chat_input_wrap div:last-child{
-  width: 80%;
+.chat_input_wrap div:nth-of-type(3){
+  width: 75%;
   height: 100%;
 }
 .chat_input_box {
@@ -291,6 +302,19 @@ body {
 }
 .chat_input:focus {
   outline: none;
+}
+.enter_btn {
+  border-radius: 100%;
+  width: 30px !important;
+  height: 30px !important;
+  background: rgb(17, 173, 17);
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 .chat_box {
   height: 70%;
@@ -618,6 +642,9 @@ body.on{
 .port_num.active {
   color: #000 !important;
 }
+.port_card_section {
+  width: 70%;
+}
 .faq_section {
   margin-top: 150px;
 }
@@ -775,6 +802,9 @@ body.on{
 }
 .sns_wrap i:hover {
   color: #5FBC76;
+}
+.num_desc {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width : 1410px) {

@@ -1,6 +1,10 @@
 $(function () {
 
-  
+  // 새로고침시 맨위로
+  $('html').animate({scrollTop : 0 })
+  setTimeout(() => {
+    $('.fix_box').fadeOut()
+  }, 3000);
   // 날짜
   let nowDate = new Date()
   let nowDate2 = nowDate.getDate()
@@ -50,11 +54,11 @@ $(function () {
 
 
   // 채팅 애니메이션
-  $(document).on('keydown', '.chat_input', function () {
-    if (window.event.keyCode == 13) {
-      let val = $(this).val()
+  $(document).on('click','.enter_btn',function(){
+    let val = $('.chat_input').val()
       if (val !== '') {
-        console.log($(this))
+        $('.chat_input').attr('readonly','true')
+        $('.chat_input').val('')
         let userChat = `<div class='chat_wrap'><div class="user_chat2">안녕하세요! ${val}입니다. 반갑습니다.</div></div>`
         $('.chat_inner_box').append(userChat)
         $('.chat_inner_box').scrollTop($('.chat_inner_box')[0].scrollHeight)
@@ -67,8 +71,37 @@ $(function () {
           $('.side_main_user_chat').text($('.last_chat').text())
         }, 2000);
         setTimeout(() => {
+          $('body').css('overflow','auto')
           $('.main_chat_box ').fadeOut()
         }, 4500);
+      }else {
+        alert('이름을 입력 해주시면 다음페이지로 넘어갈수 있습니다!')
+      }
+  })
+  $(document).on('keydown', '.chat_input', function () {
+    if (window.event.keyCode == 13) {
+      
+      let val = $(this).val()
+      if (val !== '') {
+        $(this).val('')
+        $(this).attr('readonly','true')
+        let userChat = `<div class='chat_wrap'><div class="user_chat2">안녕하세요! ${val}입니다. 반갑습니다.</div></div>`
+        $('.chat_inner_box').append(userChat)
+        $('.chat_inner_box').scrollTop($('.chat_inner_box')[0].scrollHeight)
+        $(this).val('')
+        $('.side_main_user_chat').text($('.user_chat2').text())
+
+        setTimeout(() => {
+          let chat = `<div class='chat_wrap'><div class="chat_user_box last_chat">네! ${val}님 이시군요! 포트폴리오에 오신것을 환영 합니다!</div></div>`
+          $('.chat_inner_box').append(chat)
+          $('.side_main_user_chat').text($('.last_chat').text())
+        }, 2000);
+        setTimeout(() => {
+          $('body').css('overflow','auto')
+          $('.main_chat_box ').fadeOut()
+        }, 4500);
+      }else {
+        alert('이름을 입력 해주시면 다음페이지로 넘어갈수 있습니다!')
       }
 
     }
@@ -179,6 +212,10 @@ $(function () {
       $('html').animate({scrollTop : menuC })
     })
     $(document).on('click','.menu_d',function(){
+      let menuD = $('.contact_section').offset().top - 200
+      $('html').animate({scrollTop : menuD })
+    })
+    $(document).on('click','.main_user_card_btn',function(){
       let menuD = $('.contact_section').offset().top - 200
       $('html').animate({scrollTop : menuD })
     })

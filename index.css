@@ -676,13 +676,14 @@ body.on{
   cursor: pointer;
 }
 .faq_01 {
-  width: 40%;
+  
+  max-width: 45%;
 }
 .faq_02 {
-  width: 60%;
+  max-width: 55%;
 }
 .faq_03 {
-  width: 80%;
+  max-width: 65%;
 }
 .faq_an01 {
   width: 100%;
@@ -921,8 +922,19 @@ body.on{
   .faq_card_title {
     font-size: 16px;
   }
+  .port_num {
+    width: 100%;
+  }
+  .port_card_section {
+    width: 100%;
+  }
 }
 @media screen and (max-width : 540px) {
+  .faq_01,
+  .faq_02,
+  .faq_03 {
+    max-width: 100%;
+  }
   .apple_main_footer {
     width: 350px;
   }

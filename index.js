@@ -111,9 +111,11 @@ $(function () {
     if ($('.second_section').offset().top - 300 < $(window).scrollTop()) {
       $('.skill_html').css('height', '85%')
       $('.skill_css').css('height', '85%')
-      $('.skill_js').css('height', '60%')
-      $('.skill_jq').css('height', '75%')
-      $('.skill_react').css('height', '40%')
+      $('.skill_js').css('height', '50%')
+      $('.skill_jq').css('height', '70%')
+      $('.skill_react').css('height', '50%')
+      $('.skill_svelte').css('height', '50%')
+      $('.skill_flutter').css('height', '40%')
     }
   })
 

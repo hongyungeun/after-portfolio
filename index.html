@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="프론트엔드 포트폴리오 홍윤근 hongyungeun portfolio ">
-  <meta name="description" content="안녕하세요 프론트엔드 개발자를 꿈꾸는 홍윤근의 포트폴리오 입니다">
+  <meta name="description" content="안녕하세요 프론트엔드 개발자 홍윤근의 포트폴리오 입니다">
   <meta property="og:url" content="https://hongyungeun.github.io/after-portfolio/">
   <meta property="og:title" content="홍윤근의 포트폴리오 입니다!">
   <meta property="og:type" content="website">
   <meta property="og:image" content="./img/favicon/favicon-96x96.png">
-  <meta property="og:description" content="프론트엔드 개발자를 꿈꾸는 홍윤근의 포트폴리오 입니다">
+  <meta property="og:description" content="프론트엔드 개발자 홍윤근의 포트폴리오 입니다">
   <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
@@ -36,6 +36,7 @@
 <body>
   <div class="fix_box">
     <p>이름을 입력하시거나 아무단어를 입련한후 엔터나 옆 화살표 키를 눌러주시면 넘어갑니다!</p>
+    <div class="overlay"></div>
   </div>
   <div class="wrap">
     <div class="main_section_wrap">
@@ -312,6 +313,12 @@
               <div class="skill_bar skill_react">
                 <img src="./img/React-icon.png" alt="">
               </div>
+              <div class="skill_bar skill_svelte">
+                <img src="./img/port/svelte.png" alt="">
+              </div>
+              <div class="skill_bar skill_flutter">
+                <img src="./img/port/flutter.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -329,19 +336,21 @@
               01
             </p>
             <p class="num_title">회사 홈페이지</p>
-            <p class="num_desc">사이트명 : 포트폴리오 페이지</p>
-            <p class="num_desc">사용기술 : html,css,jquery</p>
-            <p class="num_desc">설명 : 전 회사 다닐때 만들었던 회사홈페이지 입니다.</p>
-            <p class="num_desc">배운점 : 이제 까지는 슬라이드를 만들면서 슬라이드 동작이 되고 전후 움직임을 생각을 해본적이 없었습니다.<br>이 프로젝트 메인배너를 만들면서 슬라이드가 바뀌면서 뒷배경도 변하는 작업을 해본게 가장큰 배울점 이었습니다.<br>
-            그리고 이 프로젝트에서 검색엔진 최적화 등을 경험 해보았습니다. </p>
+            <p class="num_desc">사이트명 : 비지니스 페이지</p>
+            <p class="num_desc">사용기술 : Svelte-Kit</p>
+            <p class="num_desc">
+              설명 : 현재 다니고 있는 회사의 비지니스 페이지 홈페이지 입니다.
+              Svelte-Kit을 활용해 페이지를 만들었으며 메일 전송 및 다국어 처리가 되어있는 페이지 입니다.
+            </p>
+            
           </div>
           <div class="port_card_section">
             <div class="port_card_img_wrap">
-              <img src="./img/port/company.png" alt="">
+              <img src="./img/port/Business.png" alt="port1">
             </div>
-            <div class="port_card_img_wrap">
+            <!-- <div class="port_card_img_wrap">
               <img src="./img/port/company2.png" alt="">
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="port_card">
@@ -349,34 +358,43 @@
             <p class="num_main">
               02
             </p>
-            <p class="num_title">한복남 관리자 페이지</p>
-            <p class="num_desc">사이트명 : 한복남 관리자 페이지</p>
-            <p class="num_desc">사용기술 : html,css,jquery</p>
-            <p class="num_desc">설명 : 전 회사 다닐때 작업했던 한복남이라는 회사의 관리자 페이지입니다.</p>
-            <p class="num_desc">배운점 : 일반적인 달력은 예전에도 많이 만들어 보았지만 이 프로젝트를 하면서 달력을 생성하며 안쪽에 텍스트 기입이나 반응형으로 달력을 만들어 본 것은 처음이라 어려움을 겪었습니다.<br>그리고 이 프로젝트는
-            같이 작업하는 백엔드 분에게 요청을 드려 jsp내에서 작업과 ajax를 이용한 데이터 뿌려주는 작업을 해보았습니다.</p>
+            <p class="num_title">피부 및 두피 진단앱</p>
+            <p class="num_desc">사이트명 : SkinDia 진단앱</p>
+            <p class="num_desc">사용기술 : Flutter</p>
+            <p class="num_desc">
+              설명 : 회사에서 주력으로 밀고 있는 핵심 기술인 피부진단 및 두피진단을 하는 앱입니다.
+              Flutter로 개발 하였으며 Muilli라는 전용기기를 통해 피부 및 두피 상태를 진단하고
+              고객에게 관련된 결과 및 사진들을 보여주는 앱입니다.
+            </p>
+            <!-- <p class="num_desc">배운점 : 일반적인 달력은 예전에도 많이 만들어 보았지만 이 프로젝트를 하면서 달력을 생성하며 안쪽에 텍스트 기입이나 반응형으로 달력을 만들어 본 것은 처음이라 어려움을 겪었습니다.<br>그리고 이 프로젝트는
+            같이 작업하는 백엔드 분에게 요청을 드려 jsp내에서 작업과 ajax를 이용한 데이터 뿌려주는 작업을 해보았습니다.</p> -->
           </div>
-          <div class="port_card_section">
+          <div class="port_card_section flex_box">
             <div class="port_card_img_wrap">
-              <img src="./img/port/hanbok-cal.png" alt="">
+              <img src="./img/port/skinDia1.png" alt="port2" >
             </div>
             <div class="port_card_img_wrap">
-              <img src="./img/port/hanbok2.png" alt="">
+              <img src="./img/port/skinDia2.jpg" alt="port3" >
             </div>
           </div>
         </div>
         <div class="port_card">
           <div class="port_num card3">
             <p class="num_main">03</p>
-            <p class="num_title">날씨 알려주는 사이트</p>
-            <p class="num_desc">사이트명 : 날씨사이트</p>
-            <p class="num_desc">사용기술 : React.js</p>
-            <p class="num_desc">설명 : 리액트를 공부하면서 만들어본 날씨 알려주는 페이지입니다.</p>
-            <p class="num_desc">배운점 : 이 페이지가 리액트로 처음 만들어본 페이지 입니다.<br>이 프로젝트로 외부 api를 끌어 쓰는 방법을 배웠고 아무생각 없이 지나갔던 웹사이트 내부에서 권한요청에 대해 알게 되었습니다.</p>
+            <p class="num_title">현장 대기 사이트</p>
+            <p class="num_desc">사이트명 : 웨이팅 솔루션</p>
+            <p class="num_desc">사용기술 : Next.js</p>
+            <p class="num_desc">
+              설명 : 회사에서 팝업스토어 라던지 각종 현장 이벤트를 열게 되었을때 고객들이 예약해두고 카톡으로 알림을 받을 수 있는 사이트 입니다.
+            </p>
+            <!-- <p class="num_desc">배운점 : 이 페이지가 리액트로 처음 만들어본 페이지 입니다.<br>이 프로젝트로 외부 api를 끌어 쓰는 방법을 배웠고 아무생각 없이 지나갔던 웹사이트 내부에서 권한요청에 대해 알게 되었습니다.</p> -->
           </div>
           <div class="port_card_section">
             <div class="port_card_img_wrap">
-              <img src="./img/port/weather-page.png" alt="">
+              <img src="./img/port/waiting.png" alt="port4">
+            </div>
+            <div class="port_card_img_wrap">
+              <img src="./img/port/waiting2.png" alt="port5">
             </div>
           </div>
         </div>
@@ -385,15 +403,21 @@
             <p class="num_main">
               04
             </p>
-            <p class="num_title">수성구청 페이지</p>
-            <p class="num_desc">사이트명 : 수성구청 페이지</p>
-            <p class="num_desc">사용기술 : html,css,jquery</p>
-            <p class="num_desc">설명 : 전 회사 다닐때 만들었던 수성구청 내부 페이지입니다.</p>
-            <p class="num_desc">배운점 : 이사이트를 만들면서 html내부의 canvas 를 처음 다뤄 보았고 map 태그를 이용해 같은 블럭내에서 특정위치를 클릭했을때 각각 다른 이벤트가 일어나게 하는 방법을 배웠습니다.</p>
+            <p class="num_title">키오스크 판매 관리페이지</p>
+            <p class="num_desc">사이트명 : EnimaT</p>
+            <p class="num_desc">사용기술 : React, TypeScript, AWS-Amplify</p>
+            <p class="num_desc">
+              설명 : 회사에서 화장품을 생산하는 기기를 외부업체에 판매를 하게 되면서 솔루션 형식으로 같이 제작한 페이지 입니다.
+              기기에서 연결되어 있는 원재료 종류를 등록하거나 각 재료들을 블랜딩해 제품을 만들어 등록하는 시스템까지 개발 되어있습니다.
+              거기에 추가적으로 AWS에 Amplify라는 시스템을 사용해 사진이나 영상을 직접 S3에 저장을 하거나 GrpahQL을 이용해 직접 데이터를 들고오는 작업을 진행하였습니다.
+            <!-- <p class="num_desc">배운점 : 이사이트를 만들면서 html내부의 canvas 를 처음 다뤄 보았고 map 태그를 이용해 같은 블럭내에서 특정위치를 클릭했을때 각각 다른 이벤트가 일어나게 하는 방법을 배웠습니다.</p> -->
           </div>
           <div class="port_card_section">
             <div class="port_card_img_wrap">
-              <img src="./img/port/su.png" alt="">
+              <img src="./img/port/enimat1.png" alt="port6">
+            </div>
+            <div class="port_card_img_wrap">
+              <img src="./img/port/enimat2.png" alt="port7">
             </div>
           </div>
         </div>
@@ -402,18 +426,20 @@
             <p class="num_main">
               05
             </p>
-            <p class="num_title">H&M clone 사이트</p>
-            <p class="num_desc">사이트명 : H&M clone 사이트</p>
-            <p class="num_desc">사용기술 : React.js</p>
-            <p class="num_desc">설명 : 리액트를 공부하며 만들었던 clone 사이트 입니다.</p>
-            <p class="num_desc">배운점 : 기본적인 REST API 작성하는 방법을 배웠고 리액트 내부에서 router로 페이지이동과 리덕스로 값을 저장하는 방법을 배웠습니다.</p>
+            <p class="num_title">고도몰 유지보수</p>
+            <p class="num_desc">사이트명 : 고도몰</p>
+            <p class="num_desc">사용기술 : PHP, Svelte, JQuery</p>
+            <p class="num_desc">
+              설명 : 고도몰에서 운영되고 있는 쇼핑몰 프론트엔드 전반을 유지보수 및 추가제작 하는 업무를 진행했습니다.
+            </p>
+            <!-- <p class="num_desc">배운점 : 기본적인 REST API 작성하는 방법을 배웠고 리액트 내부에서 router로 페이지이동과 리덕스로 값을 저장하는 방법을 배웠습니다.</p> -->
           </div>
           <div class="port_card_section">
             <div class="port_card_img_wrap">
-              <img src="./img/port/hnm-clone-main.png" alt="">
+              <img src="./img/port/godomall.png" alt="port8">
             </div>
             <div class="port_card_img_wrap">
-              <img src="./img/port/hnm-clone-detail.png" alt="">
+              <img src="./img/port/godomall2.png" alt="port9">
             </div>
           </div>
         </div>
@@ -422,26 +448,29 @@
             <p class="num_main">
               06
             </p>
-            <p class="num_title">NETFLIX clone 사이트</p>
-            <p class="num_desc">사이트명 : NETFLIX clone 사이트</p>
-            <p class="num_desc">사용기술 : React.js</p>
-            <p class="num_desc">설명 : 리액트를 공부하며 만들었던 clone 사이트 입니다.</p>
-            <p class="num_desc">배운점 : 한 사이트에서 제공하는 api 이기는 하지만 여러가지 api를 끌어와 사용하는 방법을 배웠고 사이즈가 큰 사이트에서의 api요청이 어떻게 나눠지는지 배웠습니다.<br>
-            그리고 페이지네이션과 기본적인 검색이나 조건을 달아서 검색하는 법을 배웠습니다.</p>
+            <p class="num_title">사전설문 및 진단결과 조회 페이지</p>
+            <p class="num_desc">사이트명 : 사전설문 및 진단결과 조회 페이지</p>
+            <p class="num_desc">사용기술 : Svelte</p>
+            <p class="num_desc">
+              설명 : 고객들이 현장에서 진단을 하는 시간을 단축시키고 집에가서도 결과를 확인하거나 혹은 친구랑 진단결과를 공유할 수 있게 할 목적으로
+              제작된 페이지 입니다.
+            </p>
+            <!-- <p class="num_desc">배운점 : 한 사이트에서 제공하는 api 이기는 하지만 여러가지 api를 끌어와 사용하는 방법을 배웠고 사이즈가 큰 사이트에서의 api요청이 어떻게 나눠지는지 배웠습니다.<br>
+            그리고 페이지네이션과 기본적인 검색이나 조건을 달아서 검색하는 법을 배웠습니다.</p> -->
           </div>
           <div class="port_card_section">
             <div class="port_card_img_wrap">
-              <img src="./img/port/netflix-clone-main.png" alt="">
+              <img src="./img/port/survey.png" alt="port10">
             </div>
             <div class="port_card_img_wrap">
-              <img src="./img/port/netflix-clone-detail2.png" alt="">
+              <img src="./img/port/result.png" alt="port11">
             </div>
-            <div class="port_card_img_wrap">
-              <img src="./img/port/netflix-clone-search.png" alt="">
-            </div>
+            <!-- <div class="port_card_img_wrap">
+              <img src="./img/port/netflix-clone-search.png" alt="port10">
+            </div> -->
           </div>
         </div>
-        <div class="port_card">
+        <!-- <div class="port_card">
           <div class="port_num card5">
             <p class="num_main">
               07
@@ -461,7 +490,7 @@
               <img src="./img/port/board2.png" alt="">
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="faq_section ">
@@ -484,9 +513,10 @@
         </div>
         <div class="faq_answer">
           처음 포트폴리오 소개글에 적었듯이 꼼꼼한 성격이 가장큰 장점 이라고 생각합니다.<br>
-          저는 웹 퍼블리싱으로 1년정도 일을 하였습니다.<br>
-          퍼블리싱 일을 하면서 구조를 꼼꼼하고 확장성 있게 짜는 것이 얼마나 큰 일인지 알게 되었고<br>
-          그때의 경험을 바탕으로 재사용성이 좋고 확장성이 좋은 코드를 짜려고 노력합니다.
+          저는 웹 퍼블리싱으로 1년정도 일을 하였고 현재는 프론트로 1년 2개월 정도 근무를 하고 있습니다.<br>
+          일을 하면서 기획단계에서 부터 적극적으로 참여를해 제가 맡은 부분을 꼼꼼히 확인 하고 파악하였으며<br>
+          추후 실제로 작업하고 로직을 구현하는데 있어서도 빠지는 부분 없이 한번 더 확인하고 제작하였습니다.
+          
         </div>
       </div>
       <div class="faq_card faq_02">
@@ -518,11 +548,10 @@
           </div>
         </div>
         <div class="faq_answer">
-          우선 리액트를 충분히 잘하게 되었으면 합니다.<br>
-          지금도 어느정도 다룰줄은 알지만 '정확한 이해'나 확실한 방법까지는 잘 알지 못합니다.<br>
-          그래서 우선 리액트를 충분히 잘 다루고 싶고 잘다루게 된다면 더 나아가서는<br>
-          프론트 뿐만 아니라 백엔드 영역도 어느정도 공부해보고 싶습니다.<br>
-          일을하면서도 공부를 하면서도 느꼈지만 백엔드 지식을 모르고 프론트 공부를 한다는건 굉장이 힘들다고 생각합니다.<br>
+          프론트로 일을 했지만 앱을 해볼기회가 생겨 앱을 해보게 되었지만<br>
+          프론트나 앱 뿐만 아니라 백엔드 영역도 공부해보고 싶습니다.<br>
+          일을하면서도 공부를 하면서도 느꼈지만 백엔드 지식을 알고 일을하면 조금더 넓은 시야를 가질 수 있을 것으로 생각되고<br>
+          제 목표인 혼자서 처음부터 끝까지 다 해보는 것에도 다가가는 일이기도 합니다.<br>
           그래서 저는 입사후 프론트에 만족하지 않고 백엔드 영역까지 잘 다루는 사람이 되는 것이 목표입니다.
         </div>
       </div>

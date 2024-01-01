@@ -501,10 +501,19 @@ body {
   background: #0d9bbe;
   height: 10%;
 }
+.skill_svelte {
+  height: 10%;
+  background: #FF3B00;
+}
+.skill_flutter {
+  height: 10%;
+  background: #53C5F8;
+}
 .skill_bar {
   border-radius: 10px 10px 0 0;
   transition: all .5s;
 }
+
 
 .mobile_header_icon  {
   cursor: pointer;
@@ -807,6 +816,15 @@ body.on{
 .num_desc {
   margin-bottom: 10px;
 }
+.img_size {
+  max-width: 50%;
+}
+.flex_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 
 @media screen and (max-width : 1410px) {
   .main_chat_side_box {
